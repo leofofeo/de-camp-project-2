@@ -1,5 +1,3 @@
-{{ config(schema="stg")}}
-
 with stg_actors as (
     select * from dvd_rental.raw.actor
 )
