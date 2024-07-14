@@ -7,4 +7,29 @@ models:
         tests:
           - unique
           - not_null
-  - name: stg_addresses
+  - name: fact_rentals
+    columns:
+      - name: id
+        tests:
+          - not_null
+      - name: rental_date
+        tests:
+          - not_null
+      - name: customer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: id
+      - name: staff_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_staff')
+              field: id
+      - name: film_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_films')
+              field: id

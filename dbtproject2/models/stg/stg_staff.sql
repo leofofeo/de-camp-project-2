@@ -12,7 +12,7 @@ with stg_staff as (
     from dvd_rental.raw.staff
 )
 select
-    staff_id,
+    staff_id as id,
     email,
     store_id,
     username,
