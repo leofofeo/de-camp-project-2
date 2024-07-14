@@ -33,3 +33,28 @@ models:
           - relationships:
               to: ref('dim_films')
               field: id
+  - name: dim_customers
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: dim_films
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+  - name: dim_stores
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: manager_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_staff')
+              field: id
+

@@ -5,7 +5,7 @@ with fact_rentals as (
         r.id, 
         r.rental_date, 
         r.return_date, 
-        p.amount as rental_amount, 
+        p.amount::numeric as rental_amount, 
         f.rental_duration,  
         f.id as film_id, 
         p.id as payment_id, 
