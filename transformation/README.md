@@ -1,15 +1,27 @@
-Welcome to your new dbt project!
+`dbt` models:
 
-### Using the starter project
-
-Try running the following commands:
-- dbt run
-- dbt test
-
-
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+- stg:
+    - stg_actors
+    - stg_addresses
+    - stg_categories
+    - stg_cites
+    - stg_customers
+    - stg_film_categories
+    - stg_films
+    - stg_inventory
+    - stg_languages
+    - stg_payments
+    - stg_rentals
+    - stg_staff
+    - stg_stores
+- dim:
+    - dim_actors
+    - dim_customers
+    - dim_films
+    - dim_staff
+    - dim_stores
+- fact:
+    - fact_rentals
+- analytics
+    - full_rental_data
+    - rental_amounts_by_rating
