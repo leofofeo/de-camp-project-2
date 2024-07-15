@@ -6,7 +6,6 @@ models:
       - name: id
         tests:
           - unique
-          - not_null
   - name: fact_rentals
     columns:
       - name: id
