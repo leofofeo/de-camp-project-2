@@ -1,6 +1,6 @@
 `dbt` models:
 
-- stg:
+## stg:
     - stg_actors
     - stg_addresses
     - stg_categories
@@ -14,14 +14,14 @@
     - stg_rentals
     - stg_staff
     - stg_stores
-- dim:
+## dim:
     - dim_actors
     - dim_customers
     - dim_films
     - dim_staff
     - dim_stores
-- fact:
+## fact:
     - fact_rentals
-- analytics
+## analytics
     - full_rental_data
     - rental_amounts_by_rating
