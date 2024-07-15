@@ -1,27 +1,27 @@
 `dbt` models:
 
 ## stg:
-    - stg_actors
-    - stg_addresses
-    - stg_categories
-    - stg_cites
-    - stg_customers
-    - stg_film_categories
-    - stg_films
-    - stg_inventory
-    - stg_languages
-    - stg_payments
-    - stg_rentals
-    - stg_staff
-    - stg_stores
+- stg_actors
+- stg_addresses
+- stg_categories
+- stg_cites
+- stg_customers
+- stg_film_categories
+- stg_films
+- stg_inventory
+- stg_languages
+- stg_payments
+- stg_rentals
+- stg_staff
+- stg_stores
 ## dim:
-    - dim_actors
-    - dim_customers
-    - dim_films
-    - dim_staff
-    - dim_stores
+- dim_actors
+- dim_customers
+- dim_films
+- dim_staff
+- dim_stores
 ## fact:
-    - fact_rentals
+- fact_rentals
 ## analytics
-    - full_rental_data
-    - rental_amounts_by_rating
+- full_rental_data
+- rental_amounts_by_rating
