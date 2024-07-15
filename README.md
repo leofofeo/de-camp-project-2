@@ -11,3 +11,5 @@ To run this code locally:
 2. Run `make get-airbyte` from root to download the airbyte repo. `cd` into the repo and run `./run-ab-platform.sh` to run airbyte locally on docker.
 3. Navigate to `localhost:8000` and [set up a source](https://docs.airbyte.com/integrations/sources/postgres) and [a destination](https://docs.airbyte.com/integrations/destinations/snowflake) in order to extract the `dvd_rental` database from your local postgres instance into your data warehouse.
 4. Once your data exists in your data warehouse, you can update your dbt settings to reflect the necessary credentials, and then `cd` into the `transformation` directory to apply the transformatinos using `dbt run`.
+
+![architecture overview](./arch-diagram.png)
